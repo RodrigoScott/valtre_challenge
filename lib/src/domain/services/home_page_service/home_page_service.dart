@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import '../presentation/widgets/toast_widget.dart';
-import 'models/models.dart';
+import '../../../presentation/widgets/toast_widget.dart';
+import '../../models/models.dart';
 
 class HonePageService {
   Future<PokemonListModel?> load(int page) async {
