@@ -1,12 +1,10 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
-import 'package:page_animation_transition/animations/right_to_left_transition.dart';
-import 'package:page_animation_transition/page_animation_transition.dart';
 
 import '../../../../data/utils/constants.dart';
 import '../../../../domain/models/pokemon/pokemon_detail_model.dart';
 import '../../../../domain/services/services.dart';
-import '../detail_page/detail_page.dart';
+import '../../detail_page/detail_page.dart';
 
 class CardHandler {
   CardHandler({required this.context});
@@ -28,13 +26,17 @@ class CardHandler {
       List<String?>? species = await SpeciesService().get(item.specieUrl ?? '');
       cancel();
       if (context.mounted) {
-        Navigator.pushAndRemoveUntil(
+        Navigator.push(
           context,
-          PageAnimationTransition(
-            page: DetailPage(),
-            pageAnimationType: RightToLeftTransition(),
+          PageRouteBuilder(
+            transitionDuration: Duration(seconds: 1),
+            pageBuilder:
+                (_, __, ___) => DetailPage(
+                  item: item,
+                  color: species?[0] ?? '',
+                  description: species?[1] ?? '',
+                ),
           ),
-          (route) => true,
         );
       }
     } else {

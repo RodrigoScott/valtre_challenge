@@ -52,7 +52,10 @@ class CardWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                CustomImageNetwork(size: size.width * .15, url: image),
+                Hero(
+                  tag: image,
+                  child: CustomImageNetwork(size: size.width * .15, url: image),
+                ),
                 SizedBox(
                   width: double.infinity,
                   child: Text(
