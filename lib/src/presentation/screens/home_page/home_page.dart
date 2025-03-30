@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../domain/bloc/pokemon_list/pokemon_cubit.dart';
+import '../../../domain/bloc/pokemon_list/pokemon_cubit.dart';
 import 'home_page_view.dart';
 
 class HomePage extends StatelessWidget {
