@@ -47,17 +47,19 @@ class CustomHeader extends StatelessWidget {
     return RawMaterialButton(
       onPressed: () {
         context.read<PokemonCubit>().orderList(
-              orderByNumber: !state.orderByNumber,
-            );
+          orderByNumber: !state.orderByNumber,
+        );
       },
       elevation: 2.0,
       fillColor: Colors.white,
       padding: EdgeInsets.all(10),
       shape: CircleBorder(),
-      child: Icon(
-        state.orderByNumber ? Icons.numbers : Icons.sort_by_alpha,
-        size: 25.0,
+      child: Image.asset(
+        state.orderByNumber
+            ? 'assets/images/tag_filter.png'
+            : 'assets/images/text_filter.png',
         color: primaryColor,
+        width: MediaQuery.of(context).size.width * .07,
       ),
     );
   }
