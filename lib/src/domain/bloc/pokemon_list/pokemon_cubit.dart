@@ -76,4 +76,20 @@ class PokemonCubit extends Cubit<PokemonState> {
       }
     }
   }
+
+  searchPokemon(String key) async {
+    PokemonDetailModel? pokemonSearched = await SearchService().search(key);
+    emit(
+      PokemonSearched(
+        pokemonSearched,
+        pokemons,
+        state.orderByNumber,
+        state.hasData,
+      ),
+    );
+  }
+
+  cancelSearch() async {
+    emit(PokemonLoaded(null, pokemons, state.orderByNumber, state.hasData));
+  }
 }
