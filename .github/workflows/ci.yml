@@ -37,5 +37,5 @@ jobs:
         run: flutter analyze .
 
       # Runs unit test
-      #- name: Run tests
-      #  run: flutter test
+      - name: Run tests
+        run: flutter test

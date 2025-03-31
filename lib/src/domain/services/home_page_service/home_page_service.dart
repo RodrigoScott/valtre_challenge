@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '../../../presentation/widgets/toast_widget.dart';
 import '../../models/models.dart';
 
-class HonePageService {
+class HomePageService {
   Future<PokemonListModel?> load(int page) async {
     PokemonListModel? pokemonList;
     try {

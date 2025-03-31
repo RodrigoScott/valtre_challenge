@@ -19,7 +19,7 @@ class PokemonCubit extends Cubit<PokemonState> {
       page == 0
           ? emit(PokemonLoading(null, null, state.orderByNumber, state.hasData))
           : null;
-      PokemonListModel? pokemonFromService = await HonePageService().load(
+      PokemonListModel? pokemonFromService = await HomePageService().load(
         page,
       );
 
