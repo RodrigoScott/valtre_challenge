@@ -1,16 +1,56 @@
-# valtre_challege
+![Logo](https://github.com/RodrigoScott/valtre_challenge/blob/RodrigoScott/task1/assets/logo.png?raw=true)
 
-Pokedex development project using the Pokeapi API for the Valtre challenge.
+## Valtre Pokedex
 
-## Getting Started
+¡Lleva el mundo Pokémon en tu bolsillo con esta increíble Pokédex digital! Explora y descubre
+información esencial sobre cada Pokémon de manera rápida y organizada.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+Esta aplicación implementa la API de pokeapi.co para la obtención de datos de pokemon.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Home page:
+  Al ingresar por primera vez a la aplicación obtendrá la lista de 20 pokemones de la pokeapi,
+  permite la recarga de 20 objetos más al hacer scroll hacía abajo y llegar al final de la lista.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Organización de la lista por número o alfabeto:
+  Permitirá ordenar los objetos de la lista por número o por nombre de A a Z.
+
+- Busqueda por nombre de pokemón:
+  Permitirá la búsqueda de un pokemón mediante nombre. **Nota: Debera escibirse
+  correctamente el nombre, dado que no existe sugerencias de búsqueda en la api**
+
+- Página de detalle:
+  Permitirá mostrar la información de tallada del pokemón. Mostrará animación de desplazamiento del asset pokemón y los gráficos de stats
+
+## Software
+
+| Software |              Original Version              |               Actual Version               |
+| :---: |:------------------------------------------:|:------------------------------------------:|
+| Flutter |                   3.29.2                   |                   3.29.2                   |
+| Dart |                   3.7.2                    |                   3.7.2                    |
+| Android Studio | Android Studio Flamingo - 2022.2.1 Patch 2 | Android Studio Flamingo - 2022.2.1 Patch 2 |
+| XCode |                     -                      |                     -                      |
+| CocoaPods |                     -                      |                     -                      |
+
+## Ejecución de código
+
+1 .- Instalar librerías:
+
+    flutter pub get
+
+2 .- Ejecutar código:
+
+    flutter run
+
+## Demo
+
+![Demo](https://github.com/RodrigoScott/valtre_challenge/blob/RodrigoScott/task1/assets/images/evidences/pokevidence.gif?raw=true)
+
+## APK
+
+https://drive.google.com/file/d/1YR2mt1E2B6H82yTXIZN4rrIZPs40XInA/view?usp=sharing
+
+## Desarrollador
+
+* **Rodrigo Scott** - [Perfil](https://github.com/RodrigoScott)
