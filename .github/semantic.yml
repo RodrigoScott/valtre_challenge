@@ -1,0 +1,3 @@
+#  Allow merge commits (e.g. 'Merge branch "master" into fix/delete-all-tests')
+# If neither of commitsOnly or titleAndCommits is set to true then this option is ignored
+allowMergeCommits: true # default: false
